@@ -1,0 +1,32 @@
+.player {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Ensures the absolute positioning of the back arrow works */
+}
+
+.player img {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.player iframe {
+  border-radius: 10px;
+  max-width: 100%; /* Ensures iframe does not overflow horizontally */
+  max-height: 80vh; /* Prevents iframe from exceeding vertical space */
+}
+
+.player-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  flex-wrap: wrap; /* Enables wrapping for smaller screens */
+  margin-top: 20px; /* Adds spacing between the iframe and player info */
+  text-align: center; /* Centers the text for smaller widths */
+}
