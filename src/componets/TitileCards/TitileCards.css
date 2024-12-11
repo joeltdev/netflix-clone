@@ -15,14 +15,21 @@
   border-radius: 4px;
   cursor: pointer;
 }
-.card-list::-webkit-scrollbar{
-    display: none;
+.card-list::-webkit-scrollbar {
+  display: none;
 }
 .card-list .card {
   position: relative;
 }
-.card-list .card p {
+/* .card-list .card p {
   position: absolute;
   bottom: 10px;
   right: 10px;
-}
+  font-size: 18px; 
+  font-weight: bold; 
+  font-family: "Helvetica Neue", sans-serif; 
+  color: #ffffff; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+  text-transform: capitalize; 
+  padding: 5px 10px; 
+} */

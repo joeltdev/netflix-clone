@@ -19,8 +19,10 @@
 }
 .hero-caption p {
   max-width: 700px;
-  font-size: 17px;
-  margin-bottom: 20px;
+  font-size: 20px;
+  margin-bottom: 28px;
+  font-family: 'Montserrat', sans-serif;
+
 }
 .hero-btns {
   display: flex;
@@ -48,13 +50,15 @@
   color: #fff;
   background: #6d6d6eb3;
 }
-.hero-btns .btn:hover{
-background: #ffffffbf;
+.hero-btns .btn:hover {
+  background: #ffffffbf;
 }
-.hero-btns .btn.dark-btn:hover{
-    background: #6d6d6e66;
+.hero-btns .btn.dark-btn:hover {
+  background: #6d6d6e66;
 }
-.more-cards{
-    padding: 6%;
-
+.more-cards {
+  padding: 6%;
+  font-size: 18px; 
+  font-weight: bold; 
+  font-family: 'Arial', sans-serif;
 }
