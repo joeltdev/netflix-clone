@@ -12,7 +12,9 @@
     transparent
   );
   z-index: 1;
+  transition: background-color 0.3s;
 }
+
 .navbar-left {
   display: flex;
   align-items: center;
@@ -76,7 +78,10 @@
   cursor: pointer;
 }
 
-.navbar-profile:hover .dropdown{
+.navbar-profile:hover .dropdown {
   display: block;
+}
 
+.nav-dark {
+  background: #141414;
 }

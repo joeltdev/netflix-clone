@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 import "./login.css";
 import logo from "../../assets/logo.png";
+import { login, signup } from "../../firebase";
 
 const login = () => {
   const [signState, setSignState] = useState("Sign In");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
   return (
     <div className="login">
       <img src={logo} alt="" className="login-logo" />
@@ -29,11 +34,25 @@ const login = () => {
         <div className="form-switch">
           {signState === "Sign In" ? (
             <p>
-              New to Netflix? <span onClick={()=>{setSignState("Sign Up")} }>Sign Up Now</span>
+              New to Netflix?{" "}
+              <span
+                onClick={() => {
+                  setSignState("Sign Up");
+                }}
+              >
+                Sign Up Now
+              </span>
             </p>
           ) : (
             <p>
-              Already have account <span onClick={()=>{setSignState("Sign In")} }>Sign In Now</span>
+              Already have account{" "}
+              <span
+                onClick={() => {
+                  setSignState("Sign In");
+                }}
+              >
+                Sign In Now
+              </span>
             </p>
           )}
         </div>
