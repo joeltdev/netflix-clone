@@ -1,8 +1,4 @@
 import React from "react";
-import youtubeIcon from "../../assets/youtube_icon.png";
-import twitterIcon from "../../assets/twitter_icon.png";
-import instagramIcon from "../../assets/instagram_icon.png";
-import facebookIcon from "../../assets/facebook_icon.png";
 import netflixLogo from "../../assets/netflix_favicon.ico";
 import "./Footer.css"; // Assuming your CSS file is named Footer.css
 

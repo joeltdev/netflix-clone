@@ -8,26 +8,26 @@ import infoIcon from "../../assets/info_icon.png";
 import TitileCards from "../../componets/TitileCards/TitileCards";
 import Footer from "../../componets/Footer/Footer";
 
-const home = () => {
+const Home = () => {
   return (
     <div className="home">
       <Navbar />
       <div className="hero">
-        <img src={heroBanner} alt="" className="banner-img" />
+        <img src={heroBanner} alt="Hero Banner" className="banner-img" />
         <div className="hero-caption">
-          <img src={heroTitle} alt="" className="caption-img" />
+          <img src={heroTitle} alt="Hero Title" className="caption-img" />
           <p>
             Welcome to the world of endless stories. Stream, explore, and binge
             your favorites. Your entertainment journey starts here!
           </p>
           <div className="hero-btns">
             <button className="btn">
-              <img src={playIcon} alt="" />
+              <img src={playIcon} alt="Play" />
               Play
             </button>
             <button className="btn dark-btn">
               More Info
-              <img src={infoIcon} alt="" />
+              <img src={infoIcon} alt="More Info" />
             </button>
           </div>
           <TitileCards />
@@ -44,4 +44,4 @@ const home = () => {
   );
 };
 
-export default home;
+export default Home;

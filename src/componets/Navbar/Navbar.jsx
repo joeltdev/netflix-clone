@@ -28,7 +28,6 @@ const Navbar = () => {
 
   return (
     <div ref={navRef} className="navbar">
-      hooks
       <div className="navbar-left">
         <img src={logo} alt="Netflix Logo" />
         <ul>

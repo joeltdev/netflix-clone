@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./TitileCards.css";
 import { Link } from "react-router-dom";
-// import cards_data from "../../assets/cards/Cards_data.js";
 
 const TitileCards = ({ title, category }) => {
   const [apiData, setApiData] = useState([]);

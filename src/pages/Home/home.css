@@ -90,7 +90,7 @@
   }
 }
 
-@media (max-widht: 500px) {
+@media (max-width: 500px) {
   .caption-img {
     display: none;
   }

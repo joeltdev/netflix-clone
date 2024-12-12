@@ -1,3 +1,4 @@
+/* Login Styles */
 .login {
   height: 100vh;
   background-image: url(/background_banner.jpg);
@@ -96,6 +97,5 @@
   .login-form {
     padding: 20px;
     margin-top: 30px;
-    
   }
 }

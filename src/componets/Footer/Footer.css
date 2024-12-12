@@ -22,13 +22,14 @@
   width: 60px;
   height: auto;
   margin-left: 80px;
-  display: block; /* Make sure the logo takes up space */
+  display: block;
 }
 
 /* Footer Content */
 .footer-content {
   max-width: 1200px;
   margin: 0 auto;
+  display: block;
 }
 
 .footer-heading {

@@ -21,6 +21,7 @@ const Login = () => {
     }
     setLoading(false);
   };
+
   return loading ? (
     <div className="login-spinner">
       <img src={netflix_spinner} alt="" />
@@ -84,7 +85,7 @@ const Login = () => {
             </p>
           ) : (
             <p>
-              Already have account{" "}
+              Already have an account{" "}
               <span
                 onClick={() => {
                   setSignState("Sign In");
