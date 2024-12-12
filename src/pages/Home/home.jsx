@@ -1,8 +1,8 @@
 import React from "react";
 import "./home.css";
 import Navbar from "../../componets/Navbar/Navbar";
-import heroBanner from "../../assets/hero_banner.jpg";
-import heroTitle from "../../assets/hero_title.png";
+import heroBanner from "../../assets/moana-2-animation-3840x2160-19109.jpg";
+import heroTitle from "../../assets/moana_2__2024__logo_png__by_mintmovi3_dia1wc9.png";
 import playIcon from "../../assets/play_icon.png";
 import infoIcon from "../../assets/info_icon.png";
 import TitileCards from "../../componets/TitileCards/TitileCards";
@@ -21,21 +21,31 @@ const Home = () => {
             your favorites. Your entertainment journey starts here!
           </p>
           <div className="hero-btns">
-            <button className="btn">
+            <a
+              className="btn"
+              href="https://youtu.be/hDZ7y8RP5HE?si=AIXwzgN--hmzbWr8"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={playIcon} alt="Play" />
               Play
-            </button>
-            <button className="btn dark-btn">
+            </a>
+            <a
+              className="btn dark-btn"
+              href="https://www.imdb.com/title/tt13622970/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               More Info
               <img src={infoIcon} alt="More Info" />
-            </button>
+            </a>
           </div>
-          <TitileCards />
+          {/* <TitileCards /> */}
         </div>
       </div>
       <div className="more-cards">
         <TitileCards title={"Blockbuster Movies"} category={"top_rated"} />
-        {/* <TitileCards title={"Only on Netflix"} category={"popular"} /> */}
+        {<TitileCards title={"Only on Netflix"} category={"popular"} />}
         <TitileCards title={"Upcoming"} category={"upcoming"} />
         <TitileCards title={"Top Pics for You"} category={"now_playing"} />
       </div>

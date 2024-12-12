@@ -2,16 +2,25 @@
 .title-cards {
   margin-top: 50px;
   margin-bottom: 30px;
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Keep title above the card-list */
+  align-items: flex-start; /* Align title to the left */
+  width: 100%; /* Ensure it spans the full width */
 }
 
 .title-cards h2 {
   margin-bottom: 8px;
+  font-size: 24px; /* Adjust title font size as needed */
+  text-align: left; /* Ensure the title text aligns to the left */
+  margin-left: 20px; /* Add some spacing on the left side */
 }
 
 .card-list {
   display: flex;
   gap: 10px;
   overflow-x: scroll;
+  width: 100%; /* Ensure the card list spans full width */
+  padding-left: 20px; /* Align cards with the title */
 }
 
 .card-list img {
@@ -36,23 +45,19 @@
   }
   .title-cards h2 {
     font-size: 20px;
+    margin-left: 15px;
   }
   .card-list img {
-    width: 200px;
-  }
-  .card-list p {
-    font-size: 12px;
+    width: 180px;
   }
 }
 
 @media (max-width: 500px) {
   .title-cards h2 {
     font-size: 15px;
+    margin-left: 10px;
   }
   .card-list img {
-    width: 165px;
-  }
-  .card-list p {
-    font-size: 10px;
+    width: 150px;
   }
 }

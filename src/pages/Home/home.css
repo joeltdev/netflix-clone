@@ -1,11 +1,19 @@
-.hero {
-  position: relative;
-}
 .banner-img {
   width: 100%;
-  mask-image: linear-gradient(to right, transparent, black 75%);
-  -webkit-mask-image: linear-gradient(to right, transparent, black 75%);
+  height: 100vh; /* Ensures it takes the full screen height */
+  object-fit: cover; /* Ensures the image covers the entire area without distortion */
+  position: absolute; /* Keeps the image as the background */
+  top: 0;
+  left: 0;
+  z-index: -1; /* Ensures it stays behind other elements */
 }
+
+.hero {
+  position: relative;
+  height: 100vh; /* Matches the height of the image */
+  overflow: hidden; /* Prevents scrolling issues */
+}
+
 .hero-caption {
   position: absolute;
   width: 100%;
@@ -19,10 +27,11 @@
 }
 .hero-caption p {
   max-width: 700px;
-  font-size: 20px;
-  margin-bottom: 28px;
+  font-size: 22px;
+  margin-bottom: 48px;
   font-family: "Montserrat", sans-serif;
 }
+
 .hero-btns {
   display: flex;
   gap: 10px;
@@ -41,13 +50,17 @@
   gap: 10px;
   font-size: 15px;
   font-weight: 600;
+  color: black; /* Set the color to black */
   background: white;
   border-radius: 4px;
   cursor: pointer;
+  text-decoration: none;
 }
+
 .hero-btns .btn.dark-btn {
   color: #fff;
   background: #6d6d6eb3;
+  text-decoration: none; /* Remove underline */
 }
 .hero-btns .btn:hover {
   background: #ffffffbf;
